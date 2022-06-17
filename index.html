@@ -18,45 +18,56 @@
         <!-- Menu Div -->
         <div class="menu">
             <!-- Login -->
-            <div class="login">
+            <div class="login panels">
                 <!-- Instagram -->
                 <img src="static/instagram.png" alt="">
-                <!-- Username Input -->
-                <input type="text" placeholder="Telefone, nome de usuário ou email" class="username">
-                <!-- Password Input -->
-                <input type="text" placeholder="Senha" class="password">
-                <!-- Login Button -->
-                <input type="button" value="Entrar">
+                <!-- Form -->
+                <form action="#" class="form">
+                    <!-- Username Input -->
+                    <input type="text" placeholder="Telefone, nome de usuário ou email" class="username">
+                    <!-- Password Input -->
+                    <input type="password" placeholder="Senha" class="password">
+                    <!-- Login Button -->
+                    <input type="button" value="Entrar" class="login-btn">
+                </form>
                 <!-- Spacer -->
-                <div></div>
-                <div>OU</div>
-                <div></div>
-                <!-- Facebook Login -->
-                <a href="#" class="fb-login">Entrar com o Facebook</a>
-                <!-- Forgot Password -->
-                <a href="#" class="forgot-pw">Esqueceu a senha?</a>
+                <div class="spacer">
+                    <div></div>
+                    <span>OU</span>
+                    <div></div>
+                </div>
+                <div class="other">
+                    <!-- Facebook Login -->
+                    <a href="#" class="fb-login">Entrar com o Facebook</a>
+                    <!-- Forgot Password -->
+                    <a href="#" class="forgot-pw">Esqueceu a senha?</a>
+                </div>
             </div>
             <!-- Register -->
-            <div>
-                <span>Não tem uma conta?</span>
-                <a href="#" class="register-btn">Cadastre-se</a>
+            <div class="register panels">
+                <p>
+                    <span>Não tem uma conta?</span>
+                    <a href="#" class="register-btn">Cadastre-se</a>
+                </p>
             </div>
             <!-- Download App -->
-            <div>
+            <div class="app-dl">
                 <span>Obtenha o aplicativo.</span>
-                <!-- Apple Store -->
-                <a href="https://apps.apple.com/app/instagram/id389801252?vt=lo" target="_blank">
-                    <img src="static/download-as.png" alt="">
-                </a>
-                <!-- Google Play -->
-                <a href="https://play.google.com/store/apps/details?id=com.instagram.android&referrer=utm_source%3Dinstagramweb%26utm_campaign%3DloginPage%26ig_mid%3DCD59F798-FF5F-47CF-A089-6B334B53EBE8%26utm_content%3Dlo%26utm_medium%3Dbadge" target="_blank">
-                    <img src="static/download-gp.png" alt="">
-                </a>
+                <div>
+                    <!-- Apple Store -->
+                    <a href="https://apps.apple.com/app/instagram/id389801252?vt=lo" target="_blank">
+                        <img src="static/download-as.png" alt="">
+                    </a>
+                    <!-- Google Play -->
+                    <a href="https://play.google.com/store/apps/details?id=com.instagram.android&referrer=utm_source%3Dinstagramweb%26utm_campaign%3DloginPage%26ig_mid%3DCD59F798-FF5F-47CF-A089-6B334B53EBE8%26utm_content%3Dlo%26utm_medium%3Dbadge" target="_blank">
+                        <img src="static/download-gp.png" alt="">
+                    </a>
+                </div>
             </div>
         </div>
     </div>
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
         <!-- Important Links -->
         <div class="important">
             <a href="#">Meta</a>
@@ -90,7 +101,7 @@
                 <option>Não funciona de verdade ;)</option>
             </select>
 
-            <span>© 2022 Instagram from Meta</span>
+            <span>2022 Instagram from <a href="https://github.com/RodrigoPdeOliveira" target="_blank" style="margin: 0;">Rodrigo</a></span>
         </div>
     </footer>
 </body>

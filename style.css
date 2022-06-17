@@ -1,0 +1,185 @@
+body {
+    background-color: #fafafa;
+    text-align: center;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    height: auto;
+    margin: 0;
+}
+
+body a {
+    text-decoration: dotted;
+    color: initial;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 90px 30px;
+}
+
+.mobile {
+    display: flex;
+    flex-shrink: 0;
+    height: 565px;
+}
+
+.mobile img {
+    max-width: 282px;
+    background-image: url(static/ig-background2.png);
+    background-repeat: no-repeat;
+    background-size: 88%;
+    background-position: center;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    margin-left: 32px;
+    max-width: 350px;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.panels {
+    border: #dbdbdb solid 1px;
+    background-color: #ffffff;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    align-self: center;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 375.5px;
+    width: 348px;
+    color: rgb(142, 142, 142);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin: 24px 0 80px;
+    width: 75%;
+}
+
+.form input {
+    border-radius: 5px;
+    font-size: 12px;
+    outline: none;
+}
+
+.username, .password {
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.username:focus, .password:focus {
+    border: 1px solid #a8a8a8;
+}
+
+.login-btn {
+    border: none;
+    padding: 6.5px;
+    margin-top: 10px;
+    color: white;
+    background-color: rgba(0, 149, 246, 0.3);
+    font-weight: 1000;
+}
+
+.spacer {
+    align-items: center;
+    position: relative;
+    bottom: 58px;
+    display: flex;
+    font-size: 13px;
+}
+
+.spacer span {
+    margin: 0 18px;
+    font-weight: bold;
+}
+
+.spacer div {
+    border: 1px solid #dbdbdb7c;
+    width: 100px;
+}
+
+.login img {
+    margin: 36px 0 12px;
+}
+
+.register {
+    height: 41px;
+    width: 348px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.register-btn {
+    color: rgb(0, 149, 246);
+    font-weight: bold;
+}
+
+.other {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 35px;
+}
+
+.fb-login {
+    display: flex;
+    color: rgb(56, 81, 133);
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.fb-login::before {
+    content: url(static/fb-logo.png);
+    margin-right: 8px;
+    align-self: baseline;
+}
+
+.forgot-pw {
+    border: 5px solid transparent;
+    color: rgb(0, 55, 107);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.app-dl {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    padding: 10px;
+    color: rgb(38, 38, 38);
+}
+
+.app-dl img{
+    padding: 20px 0px;
+    height: 40px;
+    width: 136px;
+}
+
+.footer *{
+    font-size: 12px;
+    color: rgb(142, 142, 142);
+    margin: 0 8px 12px;
+}
+
+.copyright select {
+    border: none;
+    background-color: #fafafa;
+    text-align: right;
+}
+
+@media screen and (max-width: 700px) {
+    .mobile {
+        display: none;
+    }
+}

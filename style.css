@@ -24,6 +24,13 @@ body {
     top: 5px;
 }
 
+#phone {
+    background-image: url(static/ig-background1.png);
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-position: 73% 26%;
+}
+
 #menu {
     position: relative;
     top: 15px;

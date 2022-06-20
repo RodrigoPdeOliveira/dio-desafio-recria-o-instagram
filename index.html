@@ -8,68 +8,42 @@
     <link rel="shortcut icon" href="static/instagram-logo.ico" type="image/x-icon">
     <title>Instagram</title>
 </head>
-<body>
-    <!-- Wrapper -->
-    <div class="wrapper">
-        <!-- Mobile Div -->
-        <div class="mobile">
-            <img src="static/iphone.png" alt="Instagram App on Iphone">
+<body class="flex">
+    <div id="wrapper" class="flex">
+        <div id="phone">
+            <img src="static/phone-bg.png" alt="Instagram Application">
         </div>
-        <!-- Menu Div -->
-        <div class="menu">
-            <!-- Login -->
-            <div class="login panels">
-                <!-- Instagram -->
-                <img src="static/instagram.png" alt="">
-                <!-- Form -->
-                <form action="#" class="form">
-                    <!-- Username Input -->
-                    <input type="text" placeholder="Telefone, nome de usuário ou email" class="username">
-                    <!-- Password Input -->
-                    <input type="password" placeholder="Senha" class="password">
-                    <!-- Login Button -->
-                    <input type="button" value="Entrar" class="login-btn">
-                </form>
-                <!-- Spacer -->
-                <div class="spacer">
-                    <div></div>
+        <div id="menu" class="flex">
+            <div id="auth" class="flex">
+                <img src="static/instagram.png" alt="Instagram">
+                <input type="text" id="login" placeholder="Telefone, nome de usuário ou email">
+                <input type="password" id="password" placeholder="Senha">
+                <input type="button" value="Entrar">
+                <div id="spacer" class="flex">
+                    <div class="flex"></div>
                     <span>OU</span>
-                    <div></div>
+                    <div class="flex"></div>
                 </div>
-                <div class="other">
-                    <!-- Facebook Login -->
-                    <a href="#" class="fb-login">Entrar com o Facebook</a>
-                    <!-- Forgot Password -->
-                    <a href="#" class="forgot-pw">Esqueceu a senha?</a>
+                <a href="" id="enter-fb">Entrar com o Facebook</a>
+                <a href="" id="forgot-pw">Esqueceu a senha?</a>
+            </div>
+            <div id="register" class="flex">
+                <div>
+                    Não tem uma conta?
+                    <a href="">Cadastre-se</a>
                 </div>
             </div>
-            <!-- Register -->
-            <div class="register panels">
-                <p>
-                    <span>Não tem uma conta?</span>
-                    <a href="#" class="register-btn">Cadastre-se</a>
-                </p>
-            </div>
-            <!-- Download App -->
-            <div class="app-dl">
+            <div id="dl-app" class="flex">
                 <span>Obtenha o aplicativo.</span>
                 <div>
-                    <!-- Apple Store -->
-                    <a href="https://apps.apple.com/app/instagram/id389801252?vt=lo" target="_blank">
-                        <img src="static/download-as.png" alt="">
-                    </a>
-                    <!-- Google Play -->
-                    <a href="https://play.google.com/store/apps/details?id=com.instagram.android&referrer=utm_source%3Dinstagramweb%26utm_campaign%3DloginPage%26ig_mid%3DCD59F798-FF5F-47CF-A089-6B334B53EBE8%26utm_content%3Dlo%26utm_medium%3Dbadge" target="_blank">
-                        <img src="static/download-gp.png" alt="">
-                    </a>
+                    <a href=""><img src="static/download-as.png" alt="Baixar na App Store"></a>
+                    <a href=""><img src="static/download-gp.png" alt="Disponível no Google Play"></a>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Footer -->
-    <footer class="footer">
-        <!-- Important Links -->
-        <div class="important">
+    <footer id="footer" class="flex">
+        <div id="important">
             <a href="#">Meta</a>
             <a href="#">Sobre</a>
             <a href="#">Blog</a>
@@ -84,23 +58,20 @@
             <a href="#">Instagram Lite</a>
             <a href="#">Carregamento de contatos e não usuários</a>
         </div>
-        <!-- Categories -->
-        <div class="categories">
+        <div id="categories">
             <a href="#">Dança</a>
             <a href="#">Comida e bebida</a>
             <a href="#">Casa e jardim</a>
             <a href="#">Música</a>
             <a href="#">Artes visuais</a>
         </div>
-        <!-- Copyright -->
-        <div class="copyright">
-            <select name="" id="">
+        <div id="copyright">
+            <select>
                 <option>Português (Brasil)</option>
                 <option>English</option>
                 <option>Español</option>
                 <option>Não funciona de verdade ;)</option>
             </select>
-
             <span>2022 Instagram from <a href="https://github.com/RodrigoPdeOliveira" target="_blank" style="margin: 0;">Rodrigo</a></span>
         </div>
     </footer>
